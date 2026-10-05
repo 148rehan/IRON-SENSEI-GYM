@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IRON SENSEI - Ultra Elite Fitness Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(234, 179, 8, 0.2); }
+      50% { box-shadow: 0 0 40px rgba(234, 179, 8, 0.5); }
+    }
+    .glow-box { animation: pulseGlow 4s infinite; }
+  </style>
+</head>
+<body class="bg-neutral-950 text-slate-100 font-sans antialiased selection:bg-yellow-500 selection:text-black">
+
+  <!-- Background Lighting -->
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-yellow-500/10 blur-[140px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-red-600/5 blur-[160px] rounded-full"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 border-b border-yellow-500/20 bg-neutral-950/90 backdrop-blur-xl px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-400 to-amber-600 flex items-center justify-center font-black text-black text-xl">⚡</div>
+      <div>
+        <h1 class="text-lg font-black tracking-wider text-yellow-400 uppercase">IRON SENSEI</h1>
+        <p class="text-[9px] tracking-widest text-neutral-400 uppercase">Elite Cyber Fitness</p>
+      </div>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-neutral-400">
+      <a href="#zones" class="hover:text-yellow-400 transition-colors">3D Arenas</a>
+      <a href="#calculator" class="hover:text-yellow-400 transition-colors">Macro AI Engine</a>
+      <a href="#plans" class="hover:text-yellow-400 transition-colors">VIP Passes</a>
+    </div>
+
+    <button class="px-5 py-2.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-neutral-950 font-black text-xs uppercase tracking-wider rounded-xl shadow-lg shadow-yellow-500/20 hover:scale-105 transition-transform">
+      Claim Free VIP Pass
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative z-10 px-6 pt-16 pb-20 max-w-7xl mx-auto text-center">
+    <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-mono uppercase tracking-widest mb-6">
+      🔥 Next-Gen Calisthenics & Heavy Iron Club
+    </span>
+    <h1 class="text-5xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white via-neutral-200 to-neutral-600 my-4 tracking-tight uppercase">
+      FORGE YOUR ULTIMATE PHYSIQUE
+    </h1>
+    <p class="text-neutral-400 text-sm md:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+      High-ticket training arena, calisthenics rigs, and personalized AI coaching designed for athletes who demand perfection.
+    </p>
+
+    <!-- 3D Arena Visualizer Box -->
+    <div id="zones" class="glow-box relative w-full h-[400px] md:h-[500px] rounded-3xl border border-yellow-500/30 bg-neutral-900/80 overflow-hidden backdrop-blur-2xl flex items-center justify-center p-6">
+      <div class="relative w-full max-w-xl p-8 rounded-2xl border border-yellow-500/40 bg-neutral-950/90 text-left">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <span class="text-xs font-mono text-yellow-400 uppercase tracking-widest">3D Zone Viewport</span>
+            <h3 class="text-3xl font-black text-white mt-1 uppercase">Calisthenics & Rig Zone</h3>
+          </div>
+          <span class="px-3 py-1 bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 text-xs rounded-full font-mono">Interactive</span>
+        </div>
+        <p class="text-xs text-neutral-400 mb-6 leading-relaxed">
+          Custom pull-up bars, weighted dip stations, gymnastics rings, and Olympic lifting platforms built for elite performance.
+        </p>
+        <div class="grid grid-cols-3 gap-3 border-t border-neutral-800 pt-4 text-center">
+          <div>
+            <p class="text-[10px] text-neutral-500 font-mono uppercase">Equipment</p>
+            <p class="text-xs font-bold text-white mt-0.5">Rogue / Eleiko</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-neutral-500 font-mono uppercase">Access</p>
+            <p class="text-xs font-bold text-yellow-400 mt-0.5">24/7 Biometric</p>
+          </div>
+          <div>
+            <p class="text-[10px] text-neutral-500 font-mono uppercase">Coaching</p>
+            <p class="text-xs font-bold text-emerald-400 mt-0.5">1-on-1 Pro</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training Disciplines -->
+  <section class="relative z-10 px-6 py-16 max-w-7xl mx-auto border-t border-neutral-900">
+    <div class="mb-12">
+      <h3 class="text-yellow-500 text-xs font-mono uppercase tracking-widest mb-2">Training Programs</h3>
+      <h2 class="text-3xl md:text-5xl font-black text-white uppercase">Master Every Discipline</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="rounded-2xl border border-neutral-800 bg-neutral-900/50 overflow-hidden hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-2">
+        <div class="h-60 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">Calisthenics & Bodyweight</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">Master muscle-ups, handstands, and levers with structured skill progression trees.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-800 bg-neutral-900/50 overflow-hidden hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-2">
+        <div class="h-60 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">Heavy Powerlifting</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">Dedicated deadlift platforms, calibrated steel plates, and squat racks for raw strength.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-neutral-800 bg-neutral-900/50 overflow-hidden hover:border-yellow-500/50 transition-all duration-300 hover:-translate-y-2">
+        <div class="h-60 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white mb-2">High-OCTANE HIIT & Conditioning</h3>
+          <p class="text-xs text-neutral-400 leading-relaxed">Sprint tracks, assault bikes, and sleds to build relentless stamina and speed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Macro & Calorie Calculator -->
+  <section id="calculator" class="relative z-10 px-6 py-16 max-w-5xl mx-auto border-t border-neutral-900">
+    <div class="bg-neutral-900 border border-yellow-500/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+      <h2 class="text-3xl font-black text-white uppercase mb-2">AI Macro & Protein Calculator</h2>
+      <p class="text-xs text-neutral-400 mb-8">Calculate your exact daily protein and calorie requirements instantly.</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between text-xs font-mono text-neutral-400 uppercase mb-2">
+              <span>Body Weight (KG)</span>
+              <span id="weightLabel" class="text-yellow-400 font-bold">70 KG</span>
+            </div>
+            <input type="range" id="weightInput" min="40" max="130" step="1" value="70" oninput="calculateMacros()" class="w-full accent-yellow-500 bg-neutral-800 rounded-lg cursor-pointer">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-mono text-neutral-400 uppercase mb-2">
+              <span>Goal Target</span>
+              <span id="goalLabel" class="text-yellow-400 font-bold">Muscle Build</span>
+            </div>
+            <select id="goalInput" onchange="calculateMacros()" class="w-full bg-neutral-950 border border-neutral-800 text-yellow-400 text-xs rounded-lg p-3 font-mono outline-none">
+              <option value="build">Muscle Build (Hypertrophy)</option>
+              <option value="fatloss">Fat Loss & Shredding</option>
+              <option value="strength">Pure Power & Strength</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="bg-neutral-950 p-6 rounded-2xl border border-neutral-800 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-mono text-neutral-400 uppercase">Daily Protein Target</span>
+            <p id="proteinVal" class="text-4xl font-black text-yellow-400 mt-2">140g / Day</p>
+            <p id="caloriesVal" class="text-sm font-mono text-neutral-300 mt-1">Est. Calories: 2,400 kcal</p>
+          </div>
+          <button class="w-full mt-6 py-3 bg-yellow-500 text-neutral-950 font-black rounded-xl text-xs uppercase hover:bg-yellow-400 transition-colors">
+            Get Full Diet Routine
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Plans -->
+  <section id="plans" class="relative z-10 px-6 py-16 max-w-6xl mx-auto border-t border-neutral-900">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-2">Membership Passes</h2>
+      <p class="text-xs text-neutral-400">Choose your tier and unlock full access to the arena.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="p-8 rounded-2xl bg-neutral-900/40 border border-neutral-800 text-center">
+        <h3 class="text-lg font-bold text-white uppercase">Pro Athlete</h3>
+        <p class="text-3xl font-black text-yellow-400 my-4">$99<span class="text-xs font-normal text-neutral-500">/mo</span></p>
+        <p class="text-xs text-neutral-400 mb-6">Full Gym & Calisthenics Access + Locker</p>
+        <button class="w-full py-2.5 bg-neutral-800 text-white font-bold rounded-xl text-xs">Select Plan</button>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-neutral-900/90 border-2 border-yellow-500 text-center relative shadow-[0_0_30px_rgba(234,179,8,0.2)]">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase">Most Popular</span>
+        <h3 class="text-lg font-bold text-white uppercase">SENSEI VIP ELITE</h3>
+        <p class="text-3xl font-black text-yellow-400 my-4">$199<span class="text-xs font-normal text-neutral-500">/mo</span></p>
+        <p class="text-xs text-neutral-400 mb-6">24/7 Access + Personal AI Coach + Sauna & Recovery</p>
+        <button class="w-full py-2.5 bg-yellow-500 text-black font-black rounded-xl text-xs uppercase">Get VIP Access</button>
+      </div>
+
+      <div class="p-8 rounded-2xl bg-neutral-900/40 border border-neutral-800 text-center">
+        <h3 class="text-lg font-bold text-white uppercase">Cyber Lifetime</h3>
+        <p class="text-3xl font-black text-yellow-400 my-4">$1,499<span class="text-xs font-normal text-neutral-500">/one-time</span></p>
+        <p class="text-xs text-neutral-400 mb-6">Lifetime Access + Private Trainer + Custom Nutrition</p>
+        <button class="w-full py-2.5 bg-neutral-800 text-white font-bold rounded-xl text-xs">Select Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-neutral-900 py-8 text-center text-xs text-neutral-500 font-mono">
+    © 2026 IRON SENSEI FITNESS CLUB. ALL RIGHTS RESERVED.
+  </footer>
+
+  <script>
+    function calculateMacros() {
+      const weight = parseInt(document.getElementById('weightInput').value);
+      const goal = document.getElementById('goalInput').value;
+      
+      document.getElementById('weightLabel').innerText = weight + ' KG';
+
+      let protein = weight * 2; // Default 2g per kg
+      let calories = weight * 33;
+
+      if (goal === 'fatloss') {
+        protein = Math.round(weight * 2.2);
+        calories = Math.round(weight * 26);
+      } else if (goal === 'strength') {
+        protein = Math.round(weight * 2.4);
+        calories = Math.round(weight * 38);
+      }
+
+      document.getElementById('proteinVal').innerText = protein + 'g / Day';
+      document.getElementById('caloriesVal').innerText = 'Est. Calories: ' + calories.toLocaleString() + ' kcal';
+    }
+  </script>
+</body>
+  </html>
+        
